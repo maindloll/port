@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app/css/style.css">
+    <script src="https://kit.fontawesome.com/893659774e.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container" style="position: relative">
+            <div class="header-half-block"></div>
+            <div class="header_inner">
+                <div class="header_logo" data-scroll="#intro">
+                    <a href="/">
+                        <img class="logo_image desktop-content" src="app/images/facecheck_mark_small.png" alt="logo">
+                        <img class="desktop-content" src="app/images/facecheck_logotype.svg" alt="logo_name">
+                        <img class="logo_image mobile-content" src="app/images/mobile-img/facecheck_mark_small.svg" alt="logo">
+                        <img class="mobile-content" src="app/images/mobile-img/facecheck_logotype(1).svg" alt="logo_name">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="#nowhere" id="home-scroll" class="nav_link">Home</a>
+                    <a href="#nowhere" id="features-scroll" class="nav_link">Features</a>
+                    <a href="https://discord.gg/jDvmGVK" target="_blank" class="nav_link">Discord</a>
+                    <a href="#modal-contact" id="modal-open" class="nav_link modal-open">Contact Us</a>
+                    <a class="download_now" href="http://download.overwolf.com/install/Download?PartnerId=3955" target="_blank">Download Now</a>
+                </nav>
+
+                <nav class="nav mobile" id="nav-mobile">
+                    <div class="mobile-inner">
+                        <div class="mobile-wrapper">
+                            <img style="padding-left:7px;" src="app/images/mobile-img/Union.svg" alt="">
+                            <a href="#nowhere" id="mobile-home" class="nav_link"> Home</a>
+                        </div>
+                        <div class="mobile-wrapper">
+                            <img src="app/images/mobile-img/Union1.svg" alt="">
+                            <a href="#nowhere" id="mobile-features" class="nav_link">Features</a>
+                        </div>
+                        <div class="mobile-wrapper">
+                            <img src="app/images/mobile-img/discord-icon.svg" alt="">
+                            <a href="https://discord.gg/jDvmGVK" target="_blank" class="nav_link">Join Discord</a>
+                        </div>
+                        <div class="mobile-wrapper">
+                            <img src="app/images/mobile-img/gold.svg" alt="">
+                            <a href="#modal-contact" id="modal-open" class="nav_link modal-open">Contact Us</a>
+                        </div>
+                        <div id="close-mobile"><img src="app/images/mobile-img/Group-340.svg" alt=""></div>
+                    </div>
+                </nav>
+
+                <button class="nav-toggle" id="nav_toggle" type="button">
+          <span class="nav-toggle_item">Menu</span>
+        </button>
+            </div>
+        </div>
+    </header>
+    <div id="modal-contact" class="modal" style="padding:15px 0 !important">
+        <div class="modal-title">
+            <h3 class="info-title-m2 ta-c">Contact Us</h3>
+            <a href="#close-modal" rel="modal:close" class="close_modal"></a>
+        </div>
+        <div class="form-inner">
+            <form autocomplete="off" class="modal-form" action="sendmail.php" method="POST">
+
+
+                <label for="name">Name</label>
+                <input id="name" name="sender" class="field" type="text" placeholder="Your name" autocomplete="off">
+
+                <label for="email">Email Adress</label>
+                <input id="email" name="senderEmail" class="field" type="text" placeholder="you@mail.com" autocomplete="new-email">
+
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" class="field" type="text" placeholder="What can we help you with?" autocomplete="off">
+
+                <label for="desc">Description</label>
+                <textarea name="message" maxlength="450" class="description field" cols="30" rows="7" autocomplete="off" placeholder="Let us know your thoughts about the app, ask for assistance or make suggestions here. 
+Thank you for sharing!"></textarea>
+                <div style="position: relative; width: 100%;">
+                    <div id="charactersRemaining">450</div>
+                    <span class="characters-left">characters left</span>
+                </div>
+
+                <button type="submit" name="submit" class="submit-modal">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <section class="download-desktop-app">
+        <div class="container">
+            <div class="intro-inner">
+                <div class="intro">
+                    <h2 class="info-title-m1"><span style="color: #F1BC51;">Conquer The Rift</span> With Facecheck </h2>
+                    <p>
+                        A League of Legends desktop app providing instant build confguration, enemy tags revealing their playstyle, and all the self-training resources you need!
+                    </p>
+                    <a class="button desktop-content" traget="_blank" href="http://download.overwolf.com/install/Download?PartnerId=3955">
+            Download Facecheck
+          </a>
+                    <a class="link" href="#">
+            Compliant with Riot's ToS
+          </a>
+                    <!--           <img src="app/images/homepage-thumbnail21.png" class="image-screenshot desktop-content" alt="">
+          <img src="app/images/mobile-img/main_video.png" class="image-screenshot mobile-content" alt="">  -->
+                    <iframe class="image-screenshot desktop-content" src="https://www.youtube.com/embed/_c8nIVSoDN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="image-screenshot mobile-content" src="https://www.youtube.com/embed/_c8nIVSoDN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="caption-mobile mobile-content">
+                        Just like League of Legends, Facecheck is meant for PC. To get a download reminder and quick link, join our Discord.
+                    </p>
+                    <a class="button mobile-content" href="https://discord.gg/jDvmGVK" target="_blank">
+            Join Our Discord
+          </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="drop-down-arrow"></div>
+    </section>
+
+    <section class="main-features">
+        <div class="container">
+            <div class="intro-inner" style="padding-top: 65px;">
+                <div class="info-features">
+                    <h3 class="info-title-m2 ta-c">
+                        Main Features
+                    </h3>
+                    <div class="info-body">
+                        <div class="info-screen ring">
+                            <iframe class="image-screenshot" src="https://www.youtube.com/embed/_c8nIVSoDN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="info-text" data-aos="line-1-anim">
+                            <h4 class="info-title-m3 desktop-content">Build & Rune Selection</h4>
+                            <h4 class="info-title-m3 mobile-content">Quick Build & Rune Selection</h4>
+                            <p>Choose your favorite playstyle and instantly load runes and items straight into your <br> League client.
+                            </p>
+                            <div class="line-mobile"></div>
+                        </div>
+
+                        <div class="info-screen-mobile mobile-content">
+                            <div class="info-screen ring">
+                                <iframe class="image-screenshot" src="https://www.youtube.com/embed/_c8nIVSoDN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="mobile-text">
+                                <h4 class="info-title-m3">In-Game Tags & Statistics</h4>
+                                <p>Smart Tags define each summoner's strengths, weaknesses and preferences and help you choose the right plan for victory. You can also dive deeper and research the full statistics behind the tags.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ingame-tags desktop-content">
+        <div class="container">
+            <div class="intro-inner">
+                <div class="info-features">
+                    <div class="info-body reverse">
+                        <div class="info-screen ring">
+                            <iframe class="image-screenshot" src="https://www.youtube.com/embed/_c8nIVSoDN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="info-text" data-aos="line-2-anim">
+                            <h4 class="info-title-m3">In-Game Tags & Statistics</h4>
+                            <p>Smart Tags define each summoner's strengths, weaknesses and preferences and help you choose the right plan for victory. You can also dive deeper and research the full statistics behind the tags.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-features-learn">
+        <div class="container">
+            <div class="intro-inner wrapper">
+                <div class="info-features">
+                    <div class="info-body">
+                        <div class="info-screen ring">
+                            <iframe class="image-screenshot" src="https://www.youtube.com/embed/_c8nIVSoDN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="info-text last-line" data-aos="line-3-anim">
+                            <h4 class="info-title-m3">Learn Champs and Trends</h4>
+                            <p class="desktop-content">Use Facecheck’s desktop mode to dig deep into champion trends, matchups, winrates and counters which will fuel your next match.<br /><br /> You can even create full playstyles with custom runes and items to later use in-game.</p>
+                            <p class="mobile-content">Use Facecheck’s desktop mode to dig deep into champion trends, matchups, winrates and counters which will fuel your next match. You can even create full playstyles with custom runes and items to later use in-game.</p>
+                            <div class="line-mobile"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="more-features">
+        <div class="container">
+            <div class="intro-inner">
+                <div class="info-features">
+                    <h3 class="info-title-m2 ta-c">
+                        More Features
+                    </h3>
+                    <div class="cards-inner">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h4 class="info-title-m3">2nd screen <br>live stats</h4>
+                                </div>
+                                <p>Keep Facecheck open while playing on your main screen to keep track on how you're doing.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h4 class="info-title-m3">Teamfight <br>Tactics Support</h4>
+                                </div>
+                                <p>Facecheck includes crafting tables and meta recommendations for Teamfight Tactics.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h4 class="info-title-m3">Postmatch Analysis</h4>
+                                </div>
+                                <p>Facecheck tracks your progress in key metrics and compares you to the Region's Tier.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper">
+                            <div class="card card-inactive">
+                                <div class="card-title">
+                                    <h4 class="info-title-m3 desktop-content">LOL & TFT <br />Patch notes</h4>
+                                    <h4 class="info-title-m3 mobile-content">Patch<br />notes</h4>
+                                </div>
+                                <p class="inactive-text">Cooming soon!</p>
+                                <img src="./app/images/block.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile-slider">
+        <div class="container">
+            <div class="slider-wrapper">
+                <h3 class="info-title-m2">
+                    Recommended By The Pros
+                </h3>
+
+                <div class="profile-cards profile-cards-desktop">
+                    <div data-slide="0" class="profile-card">
+                        <div class="profile-circle">
+                            <img src="app/images/Bunny.png" alt="">
+                        </div>
+                        <h5 class="profile-title">Bunnyfufuu</h5>
+                        <div class="profile-progress">
+                        </div>
+                    </div>
+                    <div data-slide="1" class="profile-card">
+                        <div class="profile-circle">
+                            <img src="app/images/card1.png" alt="">
+                        </div>
+                        <h5 class="profile-title">TFBlade</h5>
+                        <div class="profile-progress">
+
+                        </div>
+                    </div>
+                    <div data-slide="2" class="profile-card">
+                        <div class="profile-circle">
+                            <img src="app/images/TheGracier.png" alt="">
+                        </div>
+                        <h5 class="profile-title">TheGlacierr</h5>
+                        <div class="profile-progress">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="profile-cards-mobile">
+                    <div data-slide="0" class="profile-card">
+
+                        <div class="avatar-big-wrapper">
+                            <div class="profile-circle">
+                                <img src="app/images/mobile-img/Ellipse-Big.png" alt="">
+                            </div>
+                            <img class="card-big-avatar" src="app/images/mobile-img/bunny-big.png" alt="">
+                        </div>
+
+                        <div class="avatar-small profile-circle">
+                            <img src="app/images/Bunny.png" alt="">
+                        </div>
+
+                        <div class="profile-progress"></div>
+                        <h5 class="profile-title">Bunnyfufuu</h5>
+                    </div>
+
+                    <div data-slide="1" class="profile-card">
+
+                        <div class="avatar-big-wrapper">
+                            <div class="profile-circle">
+                                <img src="app/images/mobile-img/Ellipse-Big.png" alt="">
+                            </div>
+                            <img class="card-big-avatar" src="app/images/mobile-img/TftBlade-big.png" alt="">
+                        </div>
+
+                        <div class="profile-circle avatar-small">
+                            <img src="app/images/card1.png" alt="">
+                        </div>
+
+                        <div class="profile-progress"></div>
+                        <h5 class="profile-title">TFBlade</h5>
+                    </div>
+
+                    <div data-slide="2" class="profile-card">
+
+                        <div class="avatar-big-wrapper">
+                            <div class="profile-circle">
+                                <img src="app/images/mobile-img/Ellipse-Big.png" alt="">
+                            </div>
+                            <img class="card-big-avatar" src="app/images/mobile-img/Glacier-big.png" alt="">
+                        </div>
+
+                        <div class="profile-circle avatar-small">
+                            <img src="app/images/TheGracier.png" alt="">
+                        </div>
+
+                        <div class="profile-progress"></div>
+                        <h5 class="profile-title">TheGlacierr</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="owl-demo" class="owl-carousel owl-theme">
+
+                <div class="slider-card-wrapper">
+                    <div class="slider-card">
+                        <div class="slider-avatar">
+                            <img src="app/images/rank_holder.svg" alt="">
+                        </div>
+                        <div class="slider-quote">
+                            <p>Get the upper hand before <br> the game even starts.</p>
+                            <span>- Bunnyfufuu</span>
+                        </div>
+                        <div class="right-top-corner"></div>
+                        <div class="left-bottom-corner"></div>
+                    </div>
+                </div>
+
+                <div class="slider-card-wrapper">
+                    <div class="slider-card tftBlade-after">
+                        <div class="slider-avatar tft-image">
+                            <img src="app/images/rank_holder.svg" alt="">
+                        </div>
+                        <div class="slider-quote">
+                            <p>Facecheck will help you <br> become a better player.</p>
+                            <span>- TFBlade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-card-wrapper">
+                    <div class="slider-card glacier-after">
+                        <div class="slider-avatar glacier-image">
+                            <img src="app/images/rank_holder.svg" alt="">
+                        </div>
+                        <div class="slider-quote">
+                            <p class="desktop-content">Facecheck shows you everything <br> you need to know while in the game</p>
+                            <p class="mobile-content">The app shows you everything you need to know while in the game.</p>
+                            <span>- TheGlacierr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facecheck-using">
+        <img src="app/images/tree-branch1.png" class="tree-1 desktop-content" alt="">
+        <img src="app/images/tree-branch2.png" class="tree-2 desktop-content" alt="">
+        <img src="app/images/mobile-img/tree-branch_singular2-3.png" class="tree-1 mobile-content" alt="">
+        <img src="app/images/mobile-img/tree-branch_singular2-4.png" class="tree-2 mobile-content" alt="">
+        <div class="container">
+            <div class="intro-inner">
+                <div class="intro">
+                    <h4 class="info-title-m2 ta-c" style="color:#F4F2FF">Over 500,000 Summoners Are Using Facecheck</h4>
+                    <a class="button desktop-content" target="_blank" href="http://download.overwolf.com/install/Download?PartnerId=3955">
+            Download Facecheck
+          </a>
+                    <a class="button mobile-content" href="https://discord.gg/jDvmGVK" target="_blank">
+            Join Our Discord
+          </a>
+                    <p style="max-width: 500px;">
+                        Facecheck is developed on Overwolf <br> Parntered with Intel | Complies with Riot's ToS
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <div class="social-wrapper">
+                    <a href="#"><img src="app/images/envelope.svg" alt="mail"></a>
+                    <a href="https://discord.gg/jDvmGVK" target="_blank"><img src="app/images/discord.svg" alt="discord"></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+            <div class="copyright">
+                Copyright © 2018-2020 All rights reserved by Facecheck. Facecheck isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends © and Riot
+                Games are trademarks or registered trademarks of Riot Games, Inc.
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app/js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="app/js/main.js"></script>
+</body>
+
+</html>
